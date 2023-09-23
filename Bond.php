@@ -11,20 +11,29 @@
       margin: auto;
       width: 600px;
     }
+  
+    h1{
+      text-align: center;
+    }
+    table, td, tr{
+      padding: 10px;
+    }
   </style>
 </head>
 
 <body>
   <fieldset>
     <form action="tampil_bond.php" method="POST">
-      <table>
+      <table style="width: 100%;">
+        <thead>
+          <td colspan="3">
+            <h1>Toko Cat Guna Bangun Jaya</h1>
+          </td>
+        </thead>
         <tbody>
-          <tr>
-            <th style="font-size: 15px; column-span:3"><b>Toko Cat Guna Bangun Jaya</b></th>
-          </tr>
           <tr>  
             <td style="width: 30%;">
-              nama customer
+              Nama customer
             </td>
             <td>
               :
@@ -84,9 +93,14 @@
             </td>
           </tr>
         </tbody>
+
+        <tfoot>
+          <td>
+            <button type="submit" name="hitung">Hitung</button>
+            <button type="reset" name="batal">Batal</button>
+          </td>
+        </tfoot>
         </table>
-        <button type="submit" name="hitung">Hitung</button>
-        <button type="reset" name="batal">Batal</button>
       </form>
   </fieldset>
 </body>
